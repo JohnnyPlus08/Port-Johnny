@@ -59,9 +59,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <p class="description reveal">
-                    Sou profissional de tecnologia com formação técnica em informática pela <strong>Etec Juscelino Kubitschek</strong>, 
+                        Sou profissional de tecnologia com formação técnica em informática pela <strong>Etec Juscelino Kubitschek</strong>, 
                     estudante do 3° semestre de <strong>Desenvolvimento de Software em Multiplataformas na Fatec Luigi Papaiz</strong> e com certificações 
                     oficiais em <strong>Python (Cisco Academy / Python Institute)</strong> e <strong>Inovação</strong>. 
+                    Atualmente, trabalho na <strong>Prefeitura de Diadema como Desenvolvedor Full Stack</strong>. 
                     Unindo visão prática de suporte, infraestrutura e <strong>engenharia de software</strong>, desenvolvo 
                     aplicações digitais eficientes, funcionais e com design moderno.
                 </p>

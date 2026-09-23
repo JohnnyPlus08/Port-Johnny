@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="quick-info">
                         <h4>LinkedIn</h4>
-                        <p>Johnny da Silva Lima</p>
+                        <p>Johnny da Silva Franco deLima</p>
                     </div>
                 </a>
             </div>
