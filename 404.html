@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Rota Não Encontrada | Johnny Lima</title>
+    <!-- Importando as mesmas fontes e ícones do seu portfólio principal -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px; /* Garante espaço nas bordas em telas menores */
+            position: relative;
+        }
+
+        /* Efeito de linhas digitais de fundo para o clima hacker */
+        body::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            z-index: 2;
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            z-index: 3;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            font-family: 'Fira Code', monospace;
+            background: linear-gradient(45deg, #38bdf8, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+            display: inline-block;
+            line-height: 1;
+            animation: glitch 1s linear infinite alternate;
+        }
+
+        /* Animação sutil de trepidação para simular erro de tela */
+        @keyframes glitch {
+            0% { transform: skew(0.5deg); }
+            100% { transform: skew(-0.5deg); }
+        }
+
+        .terminal-box {
+            background-color: #1f2833;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0 35px 0; /* Aumentado espaçamento inferior */
+            border: 1px solid #38bdf8;
+            box-shadow: 0 10px 30px rgba(56, 189, 248, 0.1);
+            font-family: 'Fira Code', monospace;
+            text-align: left;
+        }
+
+        .terminal-header {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 10px;
+        }
+
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .red { background-color: #ff5f56; }
+        .yellow { background-color: #ffbd2e; }
+        .green { background-color: #27c93f; }
+
+        .terminal-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .error-line {
+            color: #ff5f56;
+            font-weight: bold;
+        }
+
+        .comment {
+            color: #6272a4;
+            font-style: italic;
+        }
+
+        .success-line {
+            color: #27c93f;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        p.message {
+            color: #667085;
+            margin-bottom: 20px;
+        }
+
+        /* SUPER DESTAQUE: Estilização do Botão de Retorno de Alta Visibilidade */
+        .btn-back {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(90deg, #a855f7, #38bdf8);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 16px 36px; /* Botão ligeiramente maior e mais robusto */
+            border-radius: 30px;
+            font-weight: 700; /* Texto mais espesso */
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            
+            /* Brilho Neon constante para chamar a atenção */
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.6), 0 0 40px rgba(56, 189, 248, 0.3);
+            
+            /* Animação sutil de pulsação infinita */
+            animation: pulse-glow 2s infinite ease-in-out;
+        }
+
+        /* Animação do Brilho e Tamanho do Botão */
+        @keyframes pulse-glow {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 15px rgba(168, 85, 247, 0.5), 0 0 30px rgba(56, 189, 248, 0.2);
+            }
+            50% {
+                transform: scale(1.03);
+                box-shadow: 0 0 25px rgba(168, 85, 247, 0.8), 0 0 50px rgba(56, 189, 248, 0.5);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 15px rgba(168, 85, 247, 0.5), 0 0 30px rgba(56, 189, 248, 0.2);
+            }
+        }
+
+        /* Efeito ao passar o mouse (Hover) super responsivo */
+        .btn-back:hover {
+            animation: none; /* Interrompe a pulsação para focar no comando do usuário */
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 0 30px rgba(168, 85, 247, 0.9), 0 0 60px rgba(56, 189, 248, 0.7);
+            border-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .btn-back i {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .btn-back:hover i {
+            transform: translateX(-6px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="error-code">404</div>
+        <h2>Oops! Rota de Produção Não Encontrada.</h2>
+        <p class="message">O recurso que você tentou acessar quebrou em runtime ou foi refatorado.</p>
+
+        <!-- Caixa de Código Estilizada simulando Terminal de Dev -->
+        <div class="terminal-box">
+            <div class="terminal-header">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle green"></div>
+            </div>
+            <div class="terminal-text">
+                <p><span class="error-line">➜</span> <span style="color: #a855f7;">Johnny-Lima:~$</span> node portfolio.js</p>
+                <p class="error-line">[ERROR] GET /page-requested HTTP/1.1 - 404 Not Found</p>
+                <p class="comment">// Provavelmente o Johnny mudou a rota enquanto deployava o backend</p>
+                <p class="comment">// Ou você digitou o endereço incorreto na URL manualmente...</p>
+                <p><span class="success-line">➜</span> <span style="color: #38bdf8;">Sugestão:</span> Reiniciar servidor e voltar para a branch 'main'.</p>
+            </div>
+        </div>
+
+        <!-- Link dinâmico ultra destacado com caminho relativo -->
+        <a href="./index.html#aboutMe" class="btn-back">
+            <i class="fas fa-arrow-left"></i> Voltar para o Portfólio
+        </a>
+    </div>
+
+</body>
+</html>
