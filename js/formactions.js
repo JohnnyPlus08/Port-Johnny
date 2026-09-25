@@ -141,6 +141,32 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span>Hardware</span>
                     </div>
                 </div>
+
+                <!-- Card: Google Cloud Capacita+ -->
+                <div class="certification-card reveal">
+                    <h3>Capacita+: Construa com o Gemini</h3>
+                    <span class="institution-year">
+                        <i class="fab fa-google"></i> Google Cloud | Ensino Superior • 2026
+                    </span>
+                    <p>
+                        Treinamento prático de formato híbrido com carga horária de <strong>2 horas</strong> realizado em 25/09/2026. Capacitação focada na aplicação prática e desenvolvimento utilizando inteligência artificial generativa com o <strong>Gemini</strong>, conceitos fundamentais de nuvem e ferramentas do ecossistema Google Cloud.
+                    </p>
+                    <div class="specialty-tags">
+                        <span>Google Cloud</span>
+                        <span>Gemini IA</span>
+                        <span>Cloud Computing</span>
+                    </div>
+
+                    <div class="cert-action-links">
+                        <a href="assets/Certificado-Capacita.png" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+                            <i class="fas fa-image"></i> Visualizar Imagem
+                        </a>
+                        <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
+                            <i class="fas fa-external-link-alt"></i> Plataforma Oficial
+                        </a>
+                    </div>
+                </div>
+
             </div>
 
             <!-- ABA 2: ACADÊMICO -->
