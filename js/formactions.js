@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     <div class="cert-action-links">
                         <a href="assets/Certificado-Capacita.png" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
-                            <i class="fas fa-image"></i> Visualizar Imagem
+                            <i class="fas fa-eye"></i> Ver Certificado
                         </a>
                         <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="cert-link-btn">
                             <i class="fas fa-external-link-alt"></i> Plataforma Oficial
