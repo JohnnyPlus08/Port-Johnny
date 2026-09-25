@@ -117,6 +117,13 @@
     transition: var(--transition);
 }
 
+.skill-svg-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    flex-shrink: 0;
+}
+
+
 .skill-card .skill-name {
     font-size: 0.9rem;
     font-weight: 600;
