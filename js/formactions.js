@@ -143,7 +143,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <!-- Card: Google Cloud Capacita+ -->
-                <div class="certification-card reveal">
+                <div class="certification-card featured-cert reveal">
+                    <span class="featured-cert-badge">
+                        <i class="fas fa-check-circle"></i> Verificado Oficial
+                    </span>
                     <h3>Capacita+: Construa com o Gemini</h3>
                     <span class="institution-year">
                         <i class="fab fa-google"></i> Google Cloud | Ensino Superior • 2026
